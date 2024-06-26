@@ -7,4 +7,4 @@ const app = express()
 
 routes(app)
 
-app.listen(ENV.PORT, () => console.log('Server running at PORT: ', ENV.PORT))
+app.listen(ENV.PORT, () => console.log(`[${ENV.NODE_ENV}] Server running at PORT: ${ENV.PORT}`))

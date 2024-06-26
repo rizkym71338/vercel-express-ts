@@ -8,5 +8,6 @@ const dotenv_1 = __importDefault(require("dotenv"));
 dotenv_1.default.config();
 exports.ENV = {
     PORT: process.env.PORT || 3000,
+    NODE_ENV: process.env.NODE_ENV,
     IS_PRODUCTION: process.env.NODE_ENV === 'production',
 };

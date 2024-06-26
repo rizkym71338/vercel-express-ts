@@ -8,4 +8,4 @@ const libs_1 = require("./libs");
 const routes_1 = require("./routes");
 const app = (0, express_1.default)();
 (0, routes_1.routes)(app);
-app.listen(libs_1.ENV.PORT, () => console.log('Server running at PORT: ', libs_1.ENV.PORT));
+app.listen(libs_1.ENV.PORT, () => console.log(`[${libs_1.ENV.NODE_ENV}] Server running at PORT: ${libs_1.ENV.PORT}`));

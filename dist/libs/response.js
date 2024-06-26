@@ -22,7 +22,7 @@ class BadRequestResponse {
 exports.BadRequestResponse = BadRequestResponse;
 class ErrorResponse {
     constructor({ response, message }) {
-        response.status(500).json({ message: env_1.ENV.IS_PRODUCTION ? message : 'Internal server error' });
+        response.status(500).json({ message: env_1.ENV.IS_PRODUCTION ? 'Internal server error' : message });
     }
 }
 exports.ErrorResponse = ErrorResponse;

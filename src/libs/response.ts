@@ -28,7 +28,7 @@ export class BadRequestResponse {
 
 export class ErrorResponse {
   constructor({ response, message }: ResponseProps) {
-    response.status(500).json({ message: ENV.IS_PRODUCTION ? message : 'Internal server error' })
+    response.status(500).json({ message: ENV.IS_PRODUCTION ? 'Internal server error' : message })
   }
 }
 
